@@ -137,6 +137,10 @@ body {
 a {
   text-decoration: none;
 }
+.headingFont {
+  font-family: 'Fredoka One', cursive;
+  color: #333d51;
+}
 .midText {
   font-size: 2rem;
   text-align: center;
@@ -164,9 +168,13 @@ body header {
 }
 body header h1 {
   font-size: 3rem;
+  font-family: 'Fredoka One', cursive;
+  color: #333d51;
 }
 body header p {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-family: 'Fredoka One', cursive;
+  color: #333d51;
 }
 body header nav {
   display: flex;
@@ -221,6 +229,7 @@ body #intro {
 body #intro h2 {
   font-size: 2rem;
   text-align: center;
+  font-family: 'Fredoka One', cursive;
   color: #333d51;
   margin-bottom: 10px;
 }
@@ -233,6 +242,8 @@ body #skills {
 body #skills h3 {
   font-size: 2rem;
   text-align: center;
+  font-family: 'Fredoka One', cursive;
+  color: #333d51;
   margin-bottom: 20px;
 }
 body #skills .skillsBox {
@@ -282,6 +293,8 @@ body #work {
 body #work h4 {
   font-size: 2rem;
   text-align: center;
+  font-family: 'Fredoka One', cursive;
+  color: #333d51;
 }
 body #work table {
   width: 100%;
@@ -307,6 +320,8 @@ body footer {
 }
 body footer h5 {
   font-size: 1.5rem;
+  font-family: 'Fredoka One', cursive;
+  color: #333d51;
 }
 body footer address {
   margin: 20px;

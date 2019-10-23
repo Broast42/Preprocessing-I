@@ -67,6 +67,11 @@ a{
 @darkOffsetColor: #cbd0d8;
 @lightOffsetColor: #f4f3ea;
 
+.headingFont{
+	font-family: 'Fredoka One', cursive;
+	color: @primaryColor;
+}
+
 .midText{
 	font-size: 2rem;
 	text-align: center;
@@ -99,12 +104,13 @@ body{
 		
 		h1{
 			font-size: 3rem;
-
+			.headingFont();
 			
 		}
 
 		p{
-			font-size: 2rem;
+			font-size: 1.5rem;
+			.headingFont();
 		}
 		
 		nav{
@@ -164,7 +170,7 @@ body{
 
 		h2{
 			.midText();
-			color: @primaryColor;
+			.headingFont();
 			margin-bottom: 10px; 
 		}
 
@@ -179,6 +185,7 @@ body{
 
 		h3{
 			.midText();
+			.headingFont();
 			margin-bottom: 20px;
 		}
 
@@ -235,6 +242,7 @@ body{
 
 		h4{
 			.midText();
+			.headingFont();
 		}
 
 		table{
@@ -263,6 +271,7 @@ body{
 
 		h5{
 			font-size: 1.5rem;
+			.headingFont();
 		}
 
 		address{
