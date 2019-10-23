@@ -137,6 +137,10 @@ body {
 a {
   text-decoration: none;
 }
+.midText {
+  font-size: 2rem;
+  text-align: center;
+}
 .center {
   display: flex;
   justify-content: center;
@@ -148,6 +152,7 @@ a {
 body {
   width: 850px;
   margin: 0px auto;
+  background: #f4f3ea;
 }
 @media (max-width: 850px) {
   body {
@@ -170,6 +175,12 @@ body header nav {
   background: #333d51;
   height: 40px;
 }
+@media (max-width: 500px) {
+  body header nav {
+    flex-direction: column;
+    height: 125px;
+  }
+}
 body header nav a {
   color: #d3ac2b;
 }
@@ -186,12 +197,30 @@ body header .topContent {
   background-size: 100%;
   padding-top: 60px;
 }
+@media (max-width: 500px) {
+  body header .topContent {
+    flex-direction: column;
+    padding-top: 20px;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  body header .name {
+    order: 2;
+  }
+}
+@media (max-width: 500px) {
+  body header .photo {
+    order: 1;
+  }
+}
 body #intro {
   padding: 10px 2%;
   background: #d3ac2b;
 }
 body #intro h2 {
   font-size: 2rem;
+  text-align: center;
   color: #333d51;
   margin-bottom: 10px;
 }
@@ -209,6 +238,12 @@ body #skills h3 {
 body #skills .skillsBox {
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 500px) {
+  body #skills .skillsBox {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 body #skills .skillsBox div {
   border: 4px solid;
@@ -234,5 +269,50 @@ body #skills .skillsBox div .i2 {
   color: purple;
 }
 body #skills .skillsBox div .i3 {
+  color: blue;
+}
+@media (max-width: 500px) {
+  body #skills .skillsBox div {
+    margin-bottom: 10px;
+  }
+}
+body #work {
+  margin: 20px 0px 20px 0px;
+}
+body #work h4 {
+  font-size: 2rem;
+  text-align: center;
+}
+body #work table {
+  width: 100%;
+  margin-top: 20px;
+  border: 1px solid #333d51;
+}
+body #work table th,
+body #work table td {
+  padding: 2%;
+}
+body #work table th {
+  text-align: left;
+  font-size: 1.2rem;
+  background: #333d51;
+  color: #d3ac2b;
+}
+body footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+body footer h5 {
+  font-size: 1.5rem;
+}
+body footer address {
+  margin: 20px;
+}
+body footer i {
+  font-size: 3rem;
+  margin-top: 20px;
   color: blue;
 }
